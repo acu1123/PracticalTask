@@ -1,0 +1,88 @@
+Test plan:
+
+Smoke tests:
+- Verify that the user is able to login by entering valid credentials and clicking on the ‘Login’ button
+- Verify that the user is not able to login with a valid password an invalid email
+- Verify that the user is not able to login with a valid email an invalid password
+
+Functional tests:
+--Email:
+- Verify that the user is not able to login with an empty email and valid password
+- The user shall be able to paste the email in the field
+- Verify an email id cannot exceed 254 characters
+- Verify the missing @ symbol in the email id field
+- Verify the missing domain in the email id field
+- Verify the missing username in the email id field
+
+
+--Password:
+- Verify that the user is not able to login with an empty password and valid email
+- The user shall be able to paste the password in the field
+- Check the max char limit for the password field
+- Check the min char limit for the password field
+- Check if the password field allows blank spaces
+- Check if the password field accepts alphabets
+- Check if the password field accepts numbers
+- Check if the password field accepts the lower case and upper case alphabets
+- Check if the password field accepts special characters
+
+
+- Verify the messages for invalid login
+- Verify the ‘Forgot Password’ functionality
+- Verify that a user is able to login with a new password only after he/she has changed the password
+- Verify if the login works for different users on a diffrent browsers at the same time
+- Verify that value of password field is visible when clicking on eye icon
+- Verify if the ‘Enter’ key is working correctly on the login page
+
+
+Non - functional tests:
+- Verify that value of password field is not visible by default
+- Verify if the font, text color, and color coding of the Login page is as per the standard
+
+Performance tests:
+Verify the time taken to log in with a valid username and password
+
+
+
+
+Design one detailed test case:
+Test case:  Verify that the user is able to login by entering valid credentials and clicking on the ‘Anmelden’ button
+
+1. step: open the following link: https://www.shop-apotheke.com/nx/login/
+	result: page is displayed where the user could login
+
+2. step: insert correct email
+3. step: insert correct password
+4. click on "Anmelden" button
+
+RESULT:
+- the user is successfully logged in
+
+
+
+Test automation task:
+- it is done using Java and the second approach, functionality displayed in GUI was used
+- goal was to successfully automate user login 
+- I did automation until the captcha that I could not bypass 
+
+- to run on other mashine: web dirver needs to be downloaded
+https://chromedriver.chromium.org/downloads
+and correct path set in Code: System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver_win32\\chromedriver.exe");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
