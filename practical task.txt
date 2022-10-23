@@ -1,0 +1,71 @@
+Test plan:
+
+Smoke tests:
+- Verify that the user is able to log in by entering valid credentials and clicking on the ‘Login’ button
+- Verify that the user is not able to log in with a valid password an invalid email
+- Verify that the user is not able to log in with a valid email an invalid password
+
+Functional tests:
+--Email:
+- Verify that the user is not able to log in with an empty email and valid password
+- The user shall be able to paste the email in the field
+- Verify an email id cannot exceed 254 characters
+- Verify the missing @ symbol in the email field
+- Verify the missing domain in the email field
+- Verify the missing username in the email field
+
+
+--Password:
+- Verify that the user is not able to log in with an empty password and valid email
+- The user shall be able to paste the password in the field
+- Check the max char limit for the password field
+- Check the min char limit for the password field
+- Check if the password field allows blank spaces
+- Check if the password field accepts alphabets
+- Check if the password field accepts numbers
+- Check if the password field accepts the lower case and upper case alphabets
+- Check if the password field accepts special characters
+
+
+- Verify the messages for invalid login
+- Verify the ‘Forgot Password’ functionality
+- Verify that a user is able to log in with a new password only after he/she has changed the password
+- Verify if the login works for different users on a different browsers at the same time
+- Verify that value of password field is visible when clicking on eye icon
+- Verify if the ‘Enter’ key is working correctly on the login page
+
+
+Non - functional tests:
+- Verify that value of password field is not visible by default
+- Verify if the font, text color, and color coding of the Login page is as per the standard
+
+Performance tests:
+Verify the time taken to log in with a valid username and password
+
+
+
+
+
+Test automation task:
+- it is done using Java and the second approach, functionality displayed in GUI was used
+- goal was to successfully automate user login 
+- I did the automation until the captcha 
+
+- to run on other machine: web driver needs to be downloaded and correct path set in code:
+https://chromedriver.chromium.org/downloads
+System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver_win32\\chromedriver.exe");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
