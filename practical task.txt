@@ -63,7 +63,7 @@ RESULT:
 Test automation task:
 - it is done using Java and the second approach, functionality displayed in GUI was used
 - goal was to successfully automate user login 
-- I did automation until the captcha that I could not bypass 
+- I did automation until the captcha 
 
 - to run on other mashine: web dirver needs to be downloaded
 https://chromedriver.chromium.org/downloads
